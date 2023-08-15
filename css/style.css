@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -13,6 +13,9 @@ body {
     --GrayishBlue: hsl(208, 11%, 55%);
     --White: hsl(0, 0%, 100%);
 
+}
+main{
+    margin-bottom: 50%;
 }
 
 header {
@@ -125,13 +128,11 @@ h2 {
 }
 
 footer {
+    position: absolute;
+    width: 90%;
     font-family: 'Open Sans', sans-serif;
     background-color: var(--VeryDarkCyan);
     padding: 0 5%;
-}
-
-.logo-copia {
-    padding: 200px 0 0;
 }
 
 .containLocation,
@@ -167,6 +168,7 @@ ol>li {
     color: var(--White);
     list-style: none;
     line-height: 3;
+    cursor: pointer;
 }
 
 .containerIconSocial{
@@ -185,4 +187,43 @@ ol>li {
     color: var(--White);
     font-size: 13px;
     padding: 40px 0;
+}
+.bi{
+    cursor: pointer;
+}
+
+.containButtonGet{
+    
+    background-color: var(--White);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 1px 20px 7px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -100px;
+}
+
+.pReady{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--VeryDarkCyan);
+    font-weight: 800;
+    padding: 20px 10px;
+}
+
+.buttonFour{
+    background-color: var(--Pink);
+    color: var(--White);
+    font-weight: 600;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: none;
+    box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
